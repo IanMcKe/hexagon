@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Settlers of Catan - HTML5</title>
+
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<script src="js/hexagons.js"></script>
+	</head>
+	<body>
+
+		<canvas id="HexCanvas" width="1000" height="750"></canvas>
+		<script>
+			var hexagonGrid = new HexagonGrid("HexCanvas", 75);
+			// hexagonGrid.drawHexGrid(7, 10, 50, 50, true);
+			//left column of three
+			hexagonGrid.drawHex(100, 160, "#fff", false);
+			hexagonGrid.drawHex(100, 310, "#fff", false);
+			hexagonGrid.drawHex(100, 460, "#fff", false);
+
+			//left column of four
+			hexagonGrid.drawHex(230, 85, "#fff", false);
+			hexagonGrid.drawHex(230, 235, "#fff", false);
+			hexagonGrid.drawHex(230, 385, "#fff", false);
+			hexagonGrid.drawHex(230, 535, "#fff", false);
+
+			//center column
+			hexagonGrid.drawHex(360, 10, "#fff", false);
+			hexagonGrid.drawHex(360, 160, "#fff", false);
+			hexagonGrid.drawHex(360, 310, "#fff", false);
+			hexagonGrid.drawHex(360, 460, "#fff", false);
+			hexagonGrid.drawHex(360, 610, "#fff", false);
+			//
+			// //right column of four
+			hexagonGrid.drawHex(490, 85, "#fff", false);
+			hexagonGrid.drawHex(490, 235, "#fff", false);
+			hexagonGrid.drawHex(490, 385, "#fff", false);
+			hexagonGrid.drawHex(490, 535, "#fff", false);
+
+			//right column of three
+			hexagonGrid.drawHex(620, 160, "#fff", false);
+			hexagonGrid.drawHex(620, 310, "#fff", false);
+			hexagonGrid.drawHex(620, 460, "#fff", false);
+		</script>
+	</body>
+</html>
